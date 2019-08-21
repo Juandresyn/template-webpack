@@ -1,0 +1,14 @@
+<!-- Svelte Module: {{ name }} -->
+
+<style>
+    .{{ slugify name }} {
+        
+    }
+</style>
+
+<script>
+    export let variableName;
+</script>
+
+<div class="{{ slugify name }}">
+</div>

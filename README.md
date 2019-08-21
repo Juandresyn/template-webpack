@@ -62,3 +62,33 @@ Then, from within your project folder:
 npm run build
 surge public
 ```
+
+## Plop templates
+
+You can create either Pages or components (feel free to extend this).
+
+```$: plop```
+
+This will make you choose between Components and Pages.
+
+Both are stores inside `src/js/(components|pages)`
+
+This is how the templates looks:
+
+```<!-- Svelte Module: {{ name }} -->
+
+<style>
+    .{{ slugify name }} {
+        
+    }
+</style>
+
+<script>
+    export let variableName;
+</script>
+
+<div class="{{ slugify name }}">
+</div>
+``` 
+
+Templates can be added/modified in `./plop-templates` 
